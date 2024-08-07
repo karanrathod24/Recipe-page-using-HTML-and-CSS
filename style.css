@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: hsl(31, 69%, 87%);
+}
+
+.container{
+    width: 700px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; 
+    margin: 80px auto;   
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img img{
+    width:600px;
+    margin: 40px auto;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.dish-name{
+    gap: 20px;
+    margin: 0 50px;
+}
+
+.dish-name h1{
+    font-family: 'Young Serif';
+    text-align: start;
+}
+
+.dish-name p{
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+.preparation-container{
+    width:600px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: hsl(32, 59%, 89%);
+}
+
+.preparation-container h3{
+    margin-top: 25px;
+    color:  hsl(332, 51%, 32%);
+    margin-inline: 30px;
+    align-items: baseline;
+}
+
+.preparation-container ul li{
+    margin: 30px 50px;
+    align-items: baseline;
+}
+
+.ingredients{
+    margin: 0;
+}
+.ingredients h2{
+    margin:10px 50px;
+    font-family: 'Young serif';
+    font-weight: 500;
+
+    color:  hsl(14, 45%, 36%);
+}
+
+.ingredients ul li{
+    margin:10px 60px;
+}
+
+hr{
+    width: 650px;
+    margin :20px auto;
+}
+
+
+.instruction-section h2{
+    margin:10px 50px;
+    font-family: 'Young Serif';
+    font-weight: 500;
+    color:  hsl(14, 45%, 36%);
+}
+
+.instruction-section ol li{
+    margin: 30px 50px;
+    align-items: baseline;
+}   
+
+.nutrition-section h2{
+    margin:10px 50px;
+    font-family: 'Young Serif';
+    font-weight: 500;
+    color:  hsl(14, 45%, 36%);
+}
+
+.nutrition-section p {
+    margin:10px 50px;
+    font-size: 18px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+  }
+
+tr td{
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+tr td:last-child{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
